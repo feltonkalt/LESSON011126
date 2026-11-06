@@ -1,11 +1,9 @@
-.inp{
+.inp {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.ras{
-    display: flex;
-}
-#Input2{
 
+.ras {
+    display: flex;
 }
