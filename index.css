@@ -7,3 +7,11 @@
 .ras {
     display: flex;
 }
+.bug{
+    color: rgb(165, 44, 42);
+}
+.IMT{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

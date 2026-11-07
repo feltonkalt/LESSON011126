@@ -10,26 +10,48 @@
 </head>
 
 <body>
-    <div class="inp">
-        <div>
-            <input id="firstInput" type="text">
-            <p id="firstError"></p>
+    <div class="Calcu">
+        <div class="inp">
+            <div>
+                <input id="firstInput" type="text">
+                <p id="firstError" class="bug"></p>
+            </div>
+            <div>
+                <input id="Input2" type="text">
+                <p id="Input2Error" class="bug"></p>
+            </div>
+            <div>
+                <input id="Input3" type="text">
+                <p id="Input3Error" class="bug"></p>
+            </div>
+
+            <div class="ras">
+                <p> Результат: </p>
+                <p class="result"> </p>
+            </div>
         </div>
-        <div>
-            <input id="Input2" type="text">
-            <p id="Input2Error"></p>
-        </div>
-        <div>
-            <input id="Input3" type="text">
-            <p id="Input3Error"></p>
-        </div>
-        
-        <p class="result"></p>
+        <button id="button"> Расчитать</button>
     </div>
-    <button id="button"> Расчитать</button>
-    <div class="ras">
-        <p> Результат: </p>
-        <p class="result"> </p>
+    <div class="NewCalcu">
+        <div class="IMT">
+            <div class="rost">
+                <p> Введите свой рост(см)</p>
+                <input id="Rost" type="text">
+                <p id="RostError" class="bug"></p>
+            </div>
+            <div class="massa">
+                <p>Введите свой вес(кг)</p>
+                <input id="Massa" type="text">
+                <p id="MassaError" class="bug"></p>
+            </div>
+            <div class="rasI">
+                <p> Результат: </p>
+                <p class="resultI"> </p>
+                <p>Категория:</p>
+                <p class="resultCategory"></p>
+            </div>
+        </div>
+        <button id="IMTBtn"> Расчитать</button>
     </div>
 </body>
 
