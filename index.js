@@ -18,7 +18,7 @@ button.addEventListener('click', () => {
         result.innerHTML = null
         return
     }
-    else{
+    else {
         firstError.innerHTML = null
     }
 
@@ -43,7 +43,7 @@ button.addEventListener('click', () => {
         result.innerHTML = null
         return
     }
-    else{
+    else {
         Inp3.innerHTML = null
     }
 })
@@ -74,34 +74,44 @@ IMTBtn.addEventListener('click', () => {
         resultt.innerHTML = null
         return
     }
-    else{
+    else {
         MassaError.innerHTML = null
     }
 
-    resultIMT = RostV / MassaV
+    resultIMT = MassaV / ((RostV / 100) * (RostV / 100))
     resultt.innerHTML = resultIMT
 
     if (resultIMT < 16.0) {
         resultCategory.innerHTML = "выраженный дефицит массы тела"
-        
+        resultCategory.style.color = "red"
     }
-    else if (16.0 < resultIMT < 18.4) {
+    else if (resultIMT < 18.4) {
         resultCategory.innerHTML = "недостаточная масса тела"
+        resultCategory.style.color = "yellow"
     }
-    else if (18.4 < resultCategory < 24.9) {
+    else if (resultCategory < 24.9) {
         resultCategory.innerHTML = "нормальная масса тела"
+        resultCategory.style.color = "green"
     }
-    else if (24.9 < resultCategory < 29.9) {
+    else if (resultCategory < 29.9) {
         resultCategory.innerHTML = "избыточная масса тела (предожирение)"
+        resultCategory.style.color = "yellow"
     }
-    else if (29.9 < resultCategory < 34.9) {
+    else if (resultCategory < 34.9) {
         resultCategory.innerHTML = "ожирение I степени"
+        resultCategory.style.color = "orange"
     }
-    else if (34.9 < resultCategory < 39.9) {
+    else if (resultCategory < 39.9) {
         resultCategory.innerHTML = "ожирение II степени"
+        resultCategory.style.color = "red"
     }
-    else if (resultCategory > 40.0) {
+    else if (resultCategory > 40) {
         resultCategory.innerHTML = "ожирение III степени"
+        resultCategory.style.color = "red"
+    }
+    else {
+        resultCategory.innerHTML = "ожирение III степени"
+        resultCategory.style.color = "red"
     }
 
 })
